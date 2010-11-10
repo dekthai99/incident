@@ -1,0 +1,22 @@
+<h1>Listing wildlives</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Others</th>
+  </tr>
+
+<% for wildlife in @wildlives %>
+  <tr>
+    <td><%=h wildlife.name %></td>
+    <td><%=h wildlife.others %></td>
+    <td><%= link_to 'Show', wildlife %></td>
+    <td><%= link_to 'Edit', edit_wildlife_path(wildlife) %></td>
+    <td><%= link_to 'Destroy', wildlife, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New wildlife', new_wildlife_path %>

@@ -1,0 +1,33 @@
+<p>
+  <b>Occupation:</b>
+  <%=h @person.occupation_id %>
+</p>
+
+<p>
+  <b>First:</b>
+  <%=h @person.first %>
+</p>
+
+<p>
+  <b>Last:</b>
+  <%=h @person.last %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%=h @person.gender %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @person.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @person.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

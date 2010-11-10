@@ -1,0 +1,24 @@
+<h1>Editing injury</h1>
+
+<% form_for(@injury) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :condition %><br />
+    <%= f.text_field :condition %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :others %><br />
+    <%= f.text_area :others %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @injury %> |
+<%= link_to 'Back', injuries_path %>

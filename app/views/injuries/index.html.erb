@@ -1,0 +1,24 @@
+<h1>Listing injuries</h1>
+
+<table>
+  <tr>
+    <th>Condition</th>
+    <th>Description</th>
+    <th>Others</th>
+  </tr>
+
+<% for injury in @injuries %>
+  <tr>
+    <td><%=h injury.condition %></td>
+    <td><%=h injury.description %></td>
+    <td><%=h injury.others %></td>
+    <td><%= link_to 'Show', injury %></td>
+    <td><%= link_to 'Edit', edit_injury_path(injury) %></td>
+    <td><%= link_to 'Destroy', injury, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New injury', new_injury_path %>

@@ -1,0 +1,22 @@
+<h1>Listing percipitations</h1>
+
+<table>
+  <tr>
+    <th>Condition</th>
+    <th>Description</th>
+  </tr>
+
+<% for percipitation in @percipitations %>
+  <tr>
+    <td><%=h percipitation.condition %></td>
+    <td><%=h percipitation.description %></td>
+    <td><%= link_to 'Show', percipitation %></td>
+    <td><%= link_to 'Edit', edit_percipitation_path(percipitation) %></td>
+    <td><%= link_to 'Destroy', percipitation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New percipitation', new_percipitation_path %>

@@ -1,0 +1,24 @@
+<h1>Listing airlines</h1>
+
+<table>
+  <tr>
+    <th>Country</th>
+    <th>Code</th>
+    <th>Name</th>
+  </tr>
+
+<% for airline in @airlines %>
+  <tr>
+    <td><%=h airline.country_id %></td>
+    <td><%=h airline.code %></td>
+    <td><%=h airline.name %></td>
+    <td><%= link_to 'Show', airline %></td>
+    <td><%= link_to 'Edit', edit_airline_path(airline) %></td>
+    <td><%= link_to 'Destroy', airline, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New airline', new_airline_path %>

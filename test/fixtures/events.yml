@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  airport_id: 1
+  location_id: 1
+  person_id: 1
+  sky_id: 1
+  visibility_id: 1
+  percipitation_id: 1
+  event_details: MyText
+  start_date: 2010-11-09
+  start_time: 2010-11-09 20:50:42
+  end_date: 2010-11-09
+  end_time: 2010-11-09 20:50:42
+
+two:
+  airport_id: 1
+  location_id: 1
+  person_id: 1
+  sky_id: 1
+  visibility_id: 1
+  percipitation_id: 1
+  event_details: MyText
+  start_date: 2010-11-09
+  start_time: 2010-11-09 20:50:42
+  end_date: 2010-11-09
+  end_time: 2010-11-09 20:50:42

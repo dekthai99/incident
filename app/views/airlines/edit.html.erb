@@ -1,0 +1,24 @@
+<h1>Editing airline</h1>
+
+<% form_for(@airline) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :country_id %><br />
+    <%= f.text_field :country_id %>
+  </p>
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @airline %> |
+<%= link_to 'Back', airlines_path %>

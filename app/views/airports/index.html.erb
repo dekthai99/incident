@@ -1,0 +1,26 @@
+<h1>Listing airports</h1>
+
+<table>
+  <tr>
+    <th>Country</th>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Location</th>
+  </tr>
+
+<% for airport in @airports %>
+  <tr>
+    <td><%=h airport.country_id %></td>
+    <td><%=h airport.code %></td>
+    <td><%=h airport.name %></td>
+    <td><%=h airport.location %></td>
+    <td><%= link_to 'Show', airport %></td>
+    <td><%= link_to 'Edit', edit_airport_path(airport) %></td>
+    <td><%= link_to 'Destroy', airport, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New airport', new_airport_path %>

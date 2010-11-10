@@ -1,0 +1,10 @@
+.bundle
+db/*.sql*
+log/*.log
+*.log
+tmp/**/*
+tmp/*
+doc/api
+doc/app
+*.swp
+*~

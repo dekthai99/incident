@@ -1,0 +1,20 @@
+<h1>Editing wildlife</h1>
+
+<% form_for(@wildlife) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :others %><br />
+    <%= f.text_field :others %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @wildlife %> |
+<%= link_to 'Back', wildlives_path %>

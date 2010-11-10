@@ -1,0 +1,18 @@
+<p>
+  <b>Condition:</b>
+  <%=h @injury.condition %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @injury.description %>
+</p>
+
+<p>
+  <b>Others:</b>
+  <%=h @injury.others %>
+</p>
+
+
+<%= link_to 'Edit', edit_injury_path(@injury) %> |
+<%= link_to 'Back', injuries_path %>

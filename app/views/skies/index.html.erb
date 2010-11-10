@@ -1,0 +1,22 @@
+<h1>Listing skies</h1>
+
+<table>
+  <tr>
+    <th>Condition</th>
+    <th>Description</th>
+  </tr>
+
+<% for sky in @skies %>
+  <tr>
+    <td><%=h sky.condition %></td>
+    <td><%=h sky.description %></td>
+    <td><%= link_to 'Show', sky %></td>
+    <td><%= link_to 'Edit', edit_sky_path(sky) %></td>
+    <td><%= link_to 'Destroy', sky, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sky', new_sky_path %>

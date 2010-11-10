@@ -1,0 +1,22 @@
+<h1>Listing occupations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Others</th>
+  </tr>
+
+<% for occupation in @occupations %>
+  <tr>
+    <td><%=h occupation.name %></td>
+    <td><%=h occupation.others %></td>
+    <td><%= link_to 'Show', occupation %></td>
+    <td><%= link_to 'Edit', edit_occupation_path(occupation) %></td>
+    <td><%= link_to 'Destroy', occupation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New occupation', new_occupation_path %>

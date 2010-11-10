@@ -1,0 +1,58 @@
+<p>
+  <b>Airport:</b>
+  <%=h @event.airport_id %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @event.location_id %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%=h @event.person_id %>
+</p>
+
+<p>
+  <b>Sky:</b>
+  <%=h @event.sky_id %>
+</p>
+
+<p>
+  <b>Visibility:</b>
+  <%=h @event.visibility_id %>
+</p>
+
+<p>
+  <b>Percipitation:</b>
+  <%=h @event.percipitation_id %>
+</p>
+
+<p>
+  <b>Event details:</b>
+  <%=h @event.event_details %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%=h @event.start_date %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%=h @event.start_time %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%=h @event.end_date %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%=h @event.end_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
